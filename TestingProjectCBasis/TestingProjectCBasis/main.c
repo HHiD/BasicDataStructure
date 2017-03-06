@@ -8,7 +8,8 @@
 
 #include <stdio.h>
 #include "TArray.h"
-#include "TLinkList.h"
+#include "TNodeList.h"
+#include "DoubleNodeList.h"
 int main(int argc, const char * argv[]) {
     
     //Array
@@ -30,18 +31,25 @@ int main(int argc, const char * argv[]) {
     show_array(&arr);
     */
     
-    //Node List
+    //One way Node List
+    /*
     pNode PHead = create_list(6);
     if(isEmpty(PHead))
         printf("链表为空\n");
     printf("链表的长度为：%d\n",list_length(PHead));
     traverse(PHead);
-//    insert_list(PHead,55,1);
+    insert_list(PHead,55,1);
     int val;
     deleteNode(PHead, 6, &val);
     traverse(PHead);
     return 0;
-
+    */
+    
+    //Double way Node list
+    pDoubleNode head = initialize_node_list(5);
+    tranverseDoubleNodeList(head);
+    printf("-----------------------------------\n");
+    reverseNode(head);
 }
 
 

@@ -6,7 +6,7 @@
 //  Copyright © 2017 HongDi Huang. All rights reserved.
 //
 
-#include "TLinkList.h"
+#include "TNodeList.h"
 //initialize NodeList
 pNode create_list(int len){
     
