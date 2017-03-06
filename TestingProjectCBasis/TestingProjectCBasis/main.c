@@ -48,7 +48,9 @@ int main(int argc, const char * argv[]) {
     //Double way Node list
     pDoubleNode head = initialize_node_list(5);
     tranverseDoubleNodeList(head);
-    printf("-----------------------------------\n");
+    printf("\n\n\n\n\n");
+    printf("-----------------------------------");
+    printf("\n\n\n\n\n");
     reverseNode(head);
 }
 
