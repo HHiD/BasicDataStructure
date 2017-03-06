@@ -8,8 +8,11 @@
 
 #include <stdio.h>
 #include "TArray.h"
+#include "TLinkList.h"
 int main(int argc, const char * argv[]) {
     
+    //Array
+    /*
     struct Arr arr;
     init_array(&arr, 6);
     append(&arr,1);
@@ -25,9 +28,20 @@ int main(int argc, const char * argv[]) {
     printf("删除了%d\n", val);
     inverse(&arr);
     show_array(&arr);
+    */
     
-    
+    //Node List
+    pNode PHead = create_list(6);
+    if(isEmpty(PHead))
+        printf("链表为空\n");
+    printf("链表的长度为：%d\n",list_length(PHead));
+    traverse(PHead);
+//    insert_list(PHead,55,1);
+    int val;
+    deleteNode(PHead, 6, &val);
+    traverse(PHead);
     return 0;
+
 }
 
 

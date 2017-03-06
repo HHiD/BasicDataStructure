@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09A677161E6D13C900D352D3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 09A677151E6D13C900D352D3 /* main.c */; };
-		09A6771E1E6D146200D352D3 /* TArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 09A6771C1E6D146200D352D3 /* TArray.c */; };
+		09A677251E6D385700D352D3 /* TLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = 09A677231E6D385700D352D3 /* TLinkList.c */; };
+		09A6772C1E6D3BD800D352D3 /* TArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 09A6772A1E6D3BD800D352D3 /* TArray.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +27,10 @@
 /* Begin PBXFileReference section */
 		09A677121E6D13C900D352D3 /* TestingProjectCBasis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestingProjectCBasis; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A677151E6D13C900D352D3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		09A6771C1E6D146200D352D3 /* TArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TArray.c; sourceTree = "<group>"; };
-		09A6771D1E6D146200D352D3 /* TArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TArray.h; sourceTree = "<group>"; };
+		09A677231E6D385700D352D3 /* TLinkList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TLinkList.c; sourceTree = "<group>"; };
+		09A677241E6D385700D352D3 /* TLinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLinkList.h; sourceTree = "<group>"; };
+		09A6772A1E6D3BD800D352D3 /* TArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TArray.c; sourceTree = "<group>"; };
+		09A6772B1E6D3BD800D352D3 /* TArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TArray.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +64,28 @@
 			isa = PBXGroup;
 			children = (
 				09A677151E6D13C900D352D3 /* main.c */,
-				09A6771D1E6D146200D352D3 /* TArray.h */,
-				09A6771C1E6D146200D352D3 /* TArray.c */,
+				09A6771F1E6D383100D352D3 /* TArray */,
+				09A677221E6D384700D352D3 /* LinkList */,
 			);
 			path = TestingProjectCBasis;
+			sourceTree = "<group>";
+		};
+		09A6771F1E6D383100D352D3 /* TArray */ = {
+			isa = PBXGroup;
+			children = (
+				09A6772A1E6D3BD800D352D3 /* TArray.c */,
+				09A6772B1E6D3BD800D352D3 /* TArray.h */,
+			);
+			path = TArray;
+			sourceTree = "<group>";
+		};
+		09A677221E6D384700D352D3 /* LinkList */ = {
+			isa = PBXGroup;
+			children = (
+				09A677241E6D385700D352D3 /* TLinkList.h */,
+				09A677231E6D385700D352D3 /* TLinkList.c */,
+			);
+			path = LinkList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09A6771E1E6D146200D352D3 /* TArray.c in Sources */,
+				09A6772C1E6D3BD800D352D3 /* TArray.c in Sources */,
+				09A677251E6D385700D352D3 /* TLinkList.c in Sources */,
 				09A677161E6D13C900D352D3 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +274,7 @@
 				09A6771B1E6D13C900D352D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
