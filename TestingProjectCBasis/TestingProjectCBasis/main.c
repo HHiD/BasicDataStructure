@@ -10,6 +10,9 @@
 #include "TArray.h"
 #include "TNodeList.h"
 #include "DoubleNodeList.h"
+#include "TTreeNode.h"
+
+
 int main(int argc, const char * argv[]) {
     
     //Array
@@ -52,6 +55,7 @@ int main(int argc, const char * argv[]) {
     printf("-----------------------------------");
     printf("\n\n\n\n\n");
     reverseNode(head);
+    
 }
 
 

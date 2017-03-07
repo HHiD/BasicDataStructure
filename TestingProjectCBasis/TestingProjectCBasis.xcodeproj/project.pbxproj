@@ -11,6 +11,7 @@
 		09A677251E6D385700D352D3 /* TNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = 09A677231E6D385700D352D3 /* TNodeList.c */; };
 		09A6772C1E6D3BD800D352D3 /* TArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 09A6772A1E6D3BD800D352D3 /* TArray.c */; };
 		09A6772F1E6D55F600D352D3 /* DoubleNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = 09A6772D1E6D55F600D352D3 /* DoubleNodeList.c */; };
+		09A677331E6E453400D352D3 /* TTreeNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 09A677311E6E453400D352D3 /* TTreeNode.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		09A6772B1E6D3BD800D352D3 /* TArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TArray.h; sourceTree = "<group>"; };
 		09A6772D1E6D55F600D352D3 /* DoubleNodeList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DoubleNodeList.c; sourceTree = "<group>"; };
 		09A6772E1E6D55F600D352D3 /* DoubleNodeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNodeList.h; sourceTree = "<group>"; };
+		09A677311E6E453400D352D3 /* TTreeNode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TTreeNode.c; sourceTree = "<group>"; };
+		09A677321E6E453400D352D3 /* TTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTreeNode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				09A677151E6D13C900D352D3 /* main.c */,
+				09A677301E6E451200D352D3 /* TreeNode */,
 				09A6771F1E6D383100D352D3 /* TArray */,
 				09A677221E6D384700D352D3 /* LinkList */,
 			);
@@ -76,8 +80,8 @@
 		09A6771F1E6D383100D352D3 /* TArray */ = {
 			isa = PBXGroup;
 			children = (
-				09A6772A1E6D3BD800D352D3 /* TArray.c */,
 				09A6772B1E6D3BD800D352D3 /* TArray.h */,
+				09A6772A1E6D3BD800D352D3 /* TArray.c */,
 			);
 			path = TArray;
 			sourceTree = "<group>";
@@ -91,6 +95,15 @@
 				09A6772D1E6D55F600D352D3 /* DoubleNodeList.c */,
 			);
 			path = LinkList;
+			sourceTree = "<group>";
+		};
+		09A677301E6E451200D352D3 /* TreeNode */ = {
+			isa = PBXGroup;
+			children = (
+				09A677321E6E453400D352D3 /* TTreeNode.h */,
+				09A677311E6E453400D352D3 /* TTreeNode.c */,
+			);
+			path = TreeNode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +167,7 @@
 				09A677251E6D385700D352D3 /* TNodeList.c in Sources */,
 				09A6772F1E6D55F600D352D3 /* DoubleNodeList.c in Sources */,
 				09A677161E6D13C900D352D3 /* main.c in Sources */,
+				09A677331E6E453400D352D3 /* TTreeNode.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
