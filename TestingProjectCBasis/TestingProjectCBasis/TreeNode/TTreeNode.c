@@ -29,3 +29,13 @@ int maxDepth(pTreeNode node){
         }
     }
 }
+
+void printAllElement(pTreeNode node){
+    
+    if (node == NULL) {
+        return;
+    }
+    printf("%d\n", node->data);
+    printAllElement(node->left);
+    printAllElement(node->right);
+}
