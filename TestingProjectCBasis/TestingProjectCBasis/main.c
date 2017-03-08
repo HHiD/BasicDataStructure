@@ -12,6 +12,11 @@
 #include "DoubleNodeList.h"
 #include "TTreeNode.h"
 
+void changeValue(int *a){
+    printf("%p", a);
+    *a = *a + 2;
+    printf("%p", a);
+}
 
 int main(int argc, const char * argv[]) {
     
@@ -75,17 +80,21 @@ int main(int argc, const char * argv[]) {
     printf("pa=%p, pb=%p, pc=%p\n", pa, pb, pc);
     */
     
-    pTreeNode rootNode = newNode(5);
-    rootNode->left = newNode(8);
-    rootNode->left->left = newNode(21);
-    rootNode->left->left->right = newNode(1);
-    rootNode->left->left->left = newNode(80);
-    rootNode->right = newNode(32);
-    rootNode->right->right = newNode(54);
-    rootNode->right->right->left = newNode(14);
     
+    //--------------Binary Tree--------------
+    
+//    int c = 1;
+//    changeValue(&c);
+//    printf("%d\n", c);
+    
+    int dataSet[] = {12, 2, 16, 5, 1, 15, 18};
+    
+    int count = sizeof(dataSet)/sizeof(int);
+    pTreeNode rootNode = NULL;
+    for (int i = 0; i < count; i++) {
+        addValueToTree((&rootNode), dataSet[i]);
+    }
     printAllElement(rootNode);
-    
 }
 
 

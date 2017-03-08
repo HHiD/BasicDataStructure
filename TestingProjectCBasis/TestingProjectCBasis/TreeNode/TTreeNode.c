@@ -35,7 +35,24 @@ void printAllElement(pTreeNode node){
     if (node == NULL) {
         return;
     }
-    printf("%d\n", node->data);
+    
     printAllElement(node->left);
+    printf("%d\n", node->data);
     printAllElement(node->right);
 }
+
+void addValueToTree(pTreeNode *rt, int data){
+    
+    if (*rt == NULL) {
+        pTreeNode nNode = newNode(data);
+        *rt = nNode;
+        return;
+    }
+
+    if (data < (*rt)->data) {
+        addValueToTree(&(*rt)->left, data);
+    }else{
+        addValueToTree(&(*rt)->right, data);
+    }
+}
+

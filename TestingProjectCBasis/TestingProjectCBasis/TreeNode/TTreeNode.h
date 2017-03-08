@@ -42,4 +42,12 @@ void printAllElement(pTreeNode node);
  */
 int maxDepth(pTreeNode node);
 
+/**
+ To construct a binary search tree
+
+ @param node The root node
+ @param data The data to be insert
+ */
+void addValueToTree(pTreeNode *node, int data);
+
 #endif /* TTreeNode_h */
