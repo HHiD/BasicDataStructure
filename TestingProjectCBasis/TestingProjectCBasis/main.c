@@ -12,12 +12,6 @@
 #include "DoubleNodeList.h"
 #include "TTreeNode.h"
 
-void changeValue(int *a){
-    printf("%p", a);
-    *a = *a + 2;
-    printf("%p", a);
-}
-
 int main(int argc, const char * argv[]) {
     
     //--------------Array--------------
@@ -81,11 +75,17 @@ int main(int argc, const char * argv[]) {
     */
     
     
-    //--------------Binary Tree--------------
+    //--------------Binary Search Tree--------------
     
 //    int c = 1;
 //    changeValue(&c);
 //    printf("%d\n", c);
+    
+//    int a = 2;
+//    int *b = &a;
+//    
+//    printf("%d\n\n", a);
+//    printf("%p\n\n", &a);
     
     int dataSet[] = {12, 2, 16, 5, 1, 15, 18};
     

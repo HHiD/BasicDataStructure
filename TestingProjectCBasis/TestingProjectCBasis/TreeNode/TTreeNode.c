@@ -48,7 +48,7 @@ void addValueToTree(pTreeNode *rt, int data){
         *rt = nNode;
         return;
     }
-
+    
     if (data < (*rt)->data) {
         addValueToTree(&(*rt)->left, data);
     }else{
@@ -56,3 +56,9 @@ void addValueToTree(pTreeNode *rt, int data){
     }
 }
 
+bool isLeaf(pTreeNode node){
+    if (node->left == NULL && node->right == NULL) {
+        return true;
+    }
+    return false;
+}
