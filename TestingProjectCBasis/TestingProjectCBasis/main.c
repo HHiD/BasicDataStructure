@@ -87,7 +87,7 @@ int main(int argc, const char * argv[]) {
 //    printf("%d\n\n", a);
 //    printf("%p\n\n", &a);
     
-    int dataSet[] = {12, 2, 16, 5, 1, 15, 18};
+    int dataSet[] = {12, 2, 16, 5, 1, 15, 18, 22, 4, 32, 51, 41, 20, 3};
     
     int count = sizeof(dataSet)/sizeof(int);
     pTreeNode rootNode = NULL;
@@ -95,6 +95,7 @@ int main(int argc, const char * argv[]) {
         addValueToTree((&rootNode), dataSet[i]);
     }
     printAllElement(rootNode);
+    
 }
 
 

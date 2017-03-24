@@ -37,6 +37,7 @@
 		09A6772E1E6D55F600D352D3 /* DoubleNodeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNodeList.h; sourceTree = "<group>"; };
 		09A677311E6E453400D352D3 /* TTreeNode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TTreeNode.c; sourceTree = "<group>"; };
 		09A677321E6E453400D352D3 /* TTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTreeNode.h; sourceTree = "<group>"; };
+		09ACF5971E76801A0041996E /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 			children = (
 				09A677141E6D13C900D352D3 /* TestingProjectCBasis */,
 				09A677131E6D13C900D352D3 /* Products */,
+				09ACF5961E76801A0041996E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +106,14 @@
 				09A677311E6E453400D352D3 /* TTreeNode.c */,
 			);
 			path = TreeNode;
+			sourceTree = "<group>";
+		};
+		09ACF5961E76801A0041996E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09ACF5971E76801A0041996E /* libstdc++.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
