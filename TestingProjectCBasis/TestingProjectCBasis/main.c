@@ -7,22 +7,15 @@
 //
 
 #include <stdio.h>
+
+
+
 #include "TArray.h"
 #include "TNodeList.h"
 #include "DoubleNodeList.h"
 #include "TTreeNode.h"
+#include "BitMapHandle.h"
 
-
-#define SetBit(A,k)     ( A[(k/32)] |= (1 << (k%32)) )
-#define ClearBit(A,k)   ( A[(k/32)] &= ~(1 << (k%32)) )
-#define TestBit(A,k)    ( A[(k/32)] & (1 << (k%32)) )
-
-#define BIT_SIZE (sizeof(int) * 8)
-
-
-int * generateInteger(int size);
-
-void initailizeNumbers(int count);
 
 int main(int argc, const char * argv[]) {
     
@@ -137,117 +130,38 @@ int main(int argc, const char * argv[]) {
 //        if ( TestBit(A, i) )
 //            printf("Bit %d was set !\n", i);
     
-    printf("%d \n", 9 | 2);
-    printf("%lu \n", sizeof(int));
-    int x = 1;
-    printf("%d \n", x << 1);
+//    printf("%d \n", 9 | 2);
+//    printf("%lu \n", sizeof(int));
+//    int x = 1;
+//    printf("%d \n", x << 1);
     
-    initailizeNumbers(100);
-}
-
-int * generateInteger(int size){
+    int count = 100;
+    int *randomSet = generateNumbers(count);
     
-    int bitSize = (sizeof(int) * 8);
-    int bitCount = size / bitSize;
-    if (size%32) {
-        bitCount ++;
+    for (int i = 0; i < count ; i++) {
+        printf("%d \n", randomSet[i]);
     }
     
-    int *result = malloc(sizeof(int) * size);
-    int *bitSet = malloc(sizeof(int) * bitCount);
     
-    int count = size;
     
-    while (count) {
-        int number = rand()%size;
-        int setIndex = number / bitSize;
-        int bitIndex = number % bitSize;
-        
-        int flag = 1;
-        flag = flag << bitIndex;
-        
-        if (bitSet[setIndex] & flag) {
-            printf("number: %d has already be here \n", number);
-        }else{
-            printf("%d \n", number);
-            bitSet[setIndex] = bitSet[setIndex] | flag;
-            count --;
-        }
-    }
+    int *result = queryIntSet(randomSet, count);
     
-    printf("Something happend \n");
-    int number = 0;
-    for (int i = 0; i < bitSize; i++) {
-        int flag = 1;
-        
-        if (bitSet[0] & flag) {
-            printf("number: %d \n", number);
-        }
-        number ++;
-        flag = flag << i;
-    }
     
-    return result;
-}
-
-
-
-
-void initailizeNumbers(int count){
-    
-    int bitCount = count / BIT_SIZE;
-    if (count % 32) {
-        bitCount ++;
-    }
-    
-    int *result = (int *)malloc(sizeof(int) * count);
-    int *bitSet = (int *)malloc(sizeof(int) * bitCount);
-    int size = count;
-    int index = 0;
-    while (size) {
-        int number = rand()%count;
-        int setIndex = number / BIT_SIZE;
-        int bitIndex = number % BIT_SIZE;
-        
-        int flag = 1;
-        flag = flag << bitIndex;
-        
-        if (bitSet[setIndex] & flag) {
-//            printf("number: %d has already be here \n", number);
-        }else{
-            
-            printf("%d \n", number);
-            
-            bitSet[setIndex] = bitSet[setIndex] | flag;
-            result[index] = number;
-            index ++;
-            size --;
-        }
-    }
-
-    printf("\n\n\n\n\n\n\n\n");
-    
-//    int cc = sizeof(result) / sizeof(int);
     
     for (int i = 0; i < count ; i++) {
         printf("%d \n", result[i]);
     }
     
+    int count2 = 10;
+    int randomSet2[10] = {10, 2, 8, 12, 21, 3, 11, 6, 9, 20};
+    int *result2 = queryIntSet(randomSet2, count2);
     
+    
+    printf("------------------------------------\n\n\n");
+    for (int i = 0; i < count2 ; i++) {
+        printf("%d \n", result2[i]);
+    }
 }
 
-
-void setInteger(int A[], int number){
-    
-    int bitSize = 32;
-    int setIndex = number / bitSize;
-    int numberIndex = number % bitSize;
-    
-    int flag = 1;
-    
-    flag = flag << numberIndex;
-    
-    A[setIndex] = flag | A[setIndex];
-}
 
 
