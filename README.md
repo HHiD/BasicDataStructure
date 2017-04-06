@@ -8,3 +8,7 @@
 3.双向链表
 
 4.二叉树
+
+5.BitSort
+
+6.reverse string
