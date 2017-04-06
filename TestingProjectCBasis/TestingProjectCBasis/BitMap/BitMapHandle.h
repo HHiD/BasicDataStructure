@@ -53,6 +53,6 @@ void setInteger(int A[], int number);
  @param count the count of this array
  @return queried array
  */
-int* queryIntSet(int* A, int count);
+int* sortIntSet(int* A, int count);
 
 #endif /* BitMapHandle_h */

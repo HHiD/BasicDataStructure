@@ -68,7 +68,7 @@ void setInteger(int A[], int number){
     A[setIndex] = flag | A[setIndex];
 }
 
-int* queryIntSet(int* A, int count){
+int* sortIntSet(int* A, int count){
     
     int bitCount = getBitCount(count);
     int *bitSets = calloc(bitCount, sizeof(int));

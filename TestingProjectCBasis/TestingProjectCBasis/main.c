@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-
+#include <string.h>
 
 
 #include "TArray.h"
@@ -15,7 +15,7 @@
 #include "DoubleNodeList.h"
 #include "TTreeNode.h"
 #include "BitMapHandle.h"
-
+#include "reverseStrHandle.h"
 
 int main(int argc, const char * argv[]) {
     
@@ -135,6 +135,9 @@ int main(int argc, const char * argv[]) {
 //    int x = 1;
 //    printf("%d \n", x << 1);
     
+    
+    //--------------Bit Sort--------------
+    /*
     int count = 100;
     int *randomSet = generateNumbers(count);
     
@@ -142,11 +145,7 @@ int main(int argc, const char * argv[]) {
         printf("%d \n", randomSet[i]);
     }
     
-    
-    
     int *result = queryIntSet(randomSet, count);
-    
-    
     
     for (int i = 0; i < count ; i++) {
         printf("%d \n", result[i]);
@@ -154,13 +153,25 @@ int main(int argc, const char * argv[]) {
     
     int count2 = 10;
     int randomSet2[10] = {10, 2, 8, 12, 21, 3, 11, 6, 9, 20};
-    int *result2 = queryIntSet(randomSet2, count2);
+    int *result2 = sortIntSet(randomSet2, count2);
     
     
     printf("------------------------------------\n\n\n");
     for (int i = 0; i < count2 ; i++) {
         printf("%d \n", result2[i]);
     }
+    */
+    
+    
+    //--------------Reverse String--------------
+    
+    char s[] = "abcdefg";
+    int endIndex = (int)strlen(s) - 1/*sizeof(s) - 2*/;
+    
+    reverseStrBlock(s, 0, 3, endIndex);
+    printf("%s \n", s);
+    
+    return 0;
 }
 
 
