@@ -11,4 +11,4 @@
 
 5.BitSort
 
-6.reverse string
+6.Rotate string
