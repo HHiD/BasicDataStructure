@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		090BD91E1E95ECAF00952867 /* reverseStrHandle.c in Sources */ = {isa = PBXBuildFile; fileRef = 090BD91C1E95ECAF00952867 /* reverseStrHandle.c */; };
+		095279651EA72F7900487F13 /* BinarySearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 095279631EA72F7900487F13 /* BinarySearch.c */; };
 		09633B401E8CAB5000B366E9 /* BitMapHandle.c in Sources */ = {isa = PBXBuildFile; fileRef = 09633B3E1E8CAB4F00B366E9 /* BitMapHandle.c */; };
 		09A677161E6D13C900D352D3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 09A677151E6D13C900D352D3 /* main.c */; };
 		09A677251E6D385700D352D3 /* TNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = 09A677231E6D385700D352D3 /* TNodeList.c */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		090BD91C1E95ECAF00952867 /* reverseStrHandle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reverseStrHandle.c; sourceTree = "<group>"; };
 		090BD91D1E95ECAF00952867 /* reverseStrHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reverseStrHandle.h; sourceTree = "<group>"; };
+		095279631EA72F7900487F13 /* BinarySearch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BinarySearch.c; sourceTree = "<group>"; };
+		095279641EA72F7900487F13 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearch.h; sourceTree = "<group>"; };
 		09633B3E1E8CAB4F00B366E9 /* BitMapHandle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BitMapHandle.c; sourceTree = "<group>"; };
 		09633B3F1E8CAB4F00B366E9 /* BitMapHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitMapHandle.h; sourceTree = "<group>"; };
 		09A677121E6D13C900D352D3 /* TestingProjectCBasis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestingProjectCBasis; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +67,15 @@
 				090BD91C1E95ECAF00952867 /* reverseStrHandle.c */,
 			);
 			path = reverseStr;
+			sourceTree = "<group>";
+		};
+		095279621EA72F6400487F13 /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				095279641EA72F7900487F13 /* BinarySearch.h */,
+				095279631EA72F7900487F13 /* BinarySearch.c */,
+			);
+			path = BinarySearch;
 			sourceTree = "<group>";
 		};
 		09633B3D1E8CAB3700B366E9 /* BitSort */ = {
@@ -102,6 +114,7 @@
 				09A677301E6E451200D352D3 /* TreeNode */,
 				09A6771F1E6D383100D352D3 /* TArray */,
 				09A677221E6D384700D352D3 /* LinkList */,
+				095279621EA72F6400487F13 /* BinarySearch */,
 			);
 			path = TestingProjectCBasis;
 			sourceTree = "<group>";
@@ -202,6 +215,7 @@
 			files = (
 				09A6772C1E6D3BD800D352D3 /* TArray.c in Sources */,
 				09A677251E6D385700D352D3 /* TNodeList.c in Sources */,
+				095279651EA72F7900487F13 /* BinarySearch.c in Sources */,
 				09A6772F1E6D55F600D352D3 /* DoubleNodeList.c in Sources */,
 				09A677161E6D13C900D352D3 /* main.c in Sources */,
 				09633B401E8CAB5000B366E9 /* BitMapHandle.c in Sources */,

@@ -16,6 +16,8 @@
 #include "TTreeNode.h"
 #include "BitMapHandle.h"
 #include "reverseStrHandle.h"
+#include "BinarySearch.h"
+
 
 int main(int argc, const char * argv[]) {
     
@@ -164,15 +166,30 @@ int main(int argc, const char * argv[]) {
     
     
     //--------------Reverse String--------------
+
+//    char s[4] = "1234";
+//    char b[4] = "abcd";
+//    char d[] = "pokj";
+//    
+//    printf("s pointer = %p, b pionter = %p \n", s, b);
+//    printf("%lu\n",sizeof(b));
+//    printf("%lu\n", strlen(s));
+//    printf("%lu\n", sizeof(d));
+//    printf("%lu\n", strlen(d));
     
-    char s[] = "abcdefg";
-    int endIndex = (int)strlen(s) - 1/*sizeof(s) - 2*/;
+//    char s[] = "abcdefg";
+//    int endIndex = (int)strlen(s) - 1/*sizeof(s) - 2*/;
+//    reverseStrBlock(s, 0, 3, endIndex);
+//    printf("%s \n", s);
+
+    //--------------BinarySearch--------------
+    int a[] = {2, 6, 10, 12, 23, 35, 40, 99};
     
-    reverseStrBlock(s, 0, 3, endIndex);
-    printf("%s \n", s);
+    int count = sizeof(a)/sizeof(int);
+    int result = searchValue(a, 6, 0, count);
+    printf("%d\n", result);
+    
     
     return 0;
 }
-
-
 
