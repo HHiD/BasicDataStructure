@@ -186,9 +186,11 @@ int main(int argc, const char * argv[]) {
     int a[] = {2, 6, 10, 12, 23, 35, 40, 99};
     
     int count = sizeof(a)/sizeof(int);
-    int result = searchValue(a, 6, 0, count);
+    int result;
+    result = searchValue(a, 6, 0, count);
     printf("%d\n", result);
-    
+    result = searchValueLoopEdition(a, 35, 0, count);
+    printf("%d\n", result);
     
     return 0;
 }

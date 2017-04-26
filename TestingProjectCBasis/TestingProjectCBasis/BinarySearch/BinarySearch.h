@@ -12,5 +12,5 @@
 #include <stdio.h>
 
 int searchValue(int *array, int number, int left, int right);
-
+int searchValueLoopEdition(int *array, int number, int left, int right);
 #endif /* BinarySearch_h */

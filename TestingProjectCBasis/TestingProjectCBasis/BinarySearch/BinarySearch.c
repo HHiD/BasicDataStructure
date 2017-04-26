@@ -28,3 +28,26 @@ int searchValue(int *array, int number, int left, int right){
     }
     return -1;
 }
+
+int searchValueLoopEdition(int *array, int number, int left, int right){
+    
+    int time = 0;
+    while (1) {
+        time++;
+        printf("times = %d\n", time);
+        int mid = (left + right)/2;
+        
+        if (left > right) {
+            return -1;
+        }
+        if (number == array[mid]) {
+            return mid;
+        }
+        if (number > array[mid]) {
+            left = mid + 1;
+        }
+        if (number < array[mid]) {
+            right = mid - 1;
+        }
+    }
+}
