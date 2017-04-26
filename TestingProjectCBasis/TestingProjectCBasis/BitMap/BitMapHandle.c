@@ -34,7 +34,7 @@ int* generateNumbers(unsigned int count){
         int number = rand()%count;
         
         if (!checkNumber(bitSet, number)) {
-            
+        
             setInteger(bitSet, number);
             result[index] = number;
             index ++;

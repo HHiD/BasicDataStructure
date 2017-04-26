@@ -147,7 +147,7 @@ int main(int argc, const char * argv[]) {
         printf("%d \n", randomSet[i]);
     }
     
-    int *result = queryIntSet(randomSet, count);
+    int *result = sortIntSet(randomSet, count);
     
     for (int i = 0; i < count ; i++) {
         printf("%d \n", result[i]);
@@ -183,13 +183,18 @@ int main(int argc, const char * argv[]) {
 //    printf("%s \n", s);
 
     //--------------BinarySearch--------------
-    int a[] = {2, 6, 10, 12, 23, 35, 40, 99};
     
-    int count = sizeof(a)/sizeof(int);
+
+    int number = 100000;
+    int *randomSet = generateNumbers(number);
+    
+    int *sortedSet = sortIntSet(randomSet, number);
+    
+    
     int result;
-    result = searchValue(a, 6, 0, count);
+    result = searchValue(sortedSet, 213, 0, number);
     printf("%d\n", result);
-    result = searchValueLoopEdition(a, 35, 0, count);
+    result = searchValueLoopEdition(sortedSet, 100, 0, number);
     printf("%d\n", result);
     
     return 0;
